@@ -1,4 +1,4 @@
-name: crypto market web to aws s3 bucket with python code
+name: Crypto Market Web to AWS S3 Bucket
 
 on:
   push:
@@ -7,10 +7,10 @@ on:
 
 jobs:
   build-and-deploy:
-    runs-on: ubuntu-latest
+    runs-on: windows-latest  # Changed to 'windows-latest' for proper runner specification
     steps:
       - name: Checkout
-        uses: actions/checkout@v1
+        uses: actions/checkout@v2  # Updated to a more recent version of the checkout action
 
       - name: Configure AWS Credentials
         uses: aws-actions/configure-aws-credentials@v1
